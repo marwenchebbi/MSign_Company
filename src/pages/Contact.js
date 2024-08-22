@@ -75,7 +75,7 @@ const Contact = () => {
         </div>
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
             <div>
-                <label htmlFor="first_name" className="sr-only">First Name</label>
+                <label htmlFor="first_name" className=" font-bolid">First Name</label>
                 <input
                     id="first_name"
                     name="first_name"
@@ -92,7 +92,7 @@ const Contact = () => {
             </div>
 
             <div>
-                <label htmlFor="last_name" className="sr-only">Last Name</label>
+                <label htmlFor="last_name" className=" font-bolid">Last Name</label>
                 <input
                     id="last_name"
                     name="last_name"
@@ -109,7 +109,7 @@ const Contact = () => {
             </div>
 
             <div>
-                <label htmlFor="email" className="sr-only">Email</label>
+                <label htmlFor="email" className=" font-bolid">Email</label>
                 <input
                     id="email"
                     name="email"
@@ -126,7 +126,7 @@ const Contact = () => {
             </div>
 
             <div>
-                <label htmlFor="phone_number" className="sr-only">Phone Number</label>
+                <label htmlFor="phone_number" className=" font-bolid">Phone Number</label>
                 <input
                     id="phone_number"
                     name="phone_number"
@@ -143,7 +143,7 @@ const Contact = () => {
             </div>
         </div>
         <div className="my-4">
-            <label htmlFor="message" className="sr-only">Message</label>
+            <label htmlFor="message" className=" font-bolid">Message</label>
             <textarea
                 id="message"
                 name="message"
@@ -188,7 +188,7 @@ const Contact = () => {
 
                                 <div className="flex flex-col">
                                     <h2 className="text-2xl">Call Us</h2>
-                                    <p className="text-white">Tel: 08055384406</p>
+                                    <p className="text-white">Tel: +000000000</p>
 
                                     <div className="mt-5">
                                         <h2 className="text-2xl">Send an E-mail</h2>

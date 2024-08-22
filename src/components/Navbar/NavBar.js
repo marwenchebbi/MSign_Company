@@ -84,9 +84,9 @@ const NavBar = () => {
                     </div>
 
                     {/* TTS Toggle Button */}
-                    <button onClick={toggleTTS} className="p-2 ml-4 rounded-lg text-blue-900 font-bold">
+                    {/* <button onClick={toggleTTS} className="p-2 ml-4 rounded-lg text-blue-900 font-bold">
                         {ttsEnabled ? 'Disable TTS' : 'Enable TTS'}
-                    </button>
+                    </button> */}
                 </div>
             </div>
         </nav>
