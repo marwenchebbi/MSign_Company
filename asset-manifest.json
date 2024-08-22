@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Tunbra_Company/static/css/main.b3c5eab3.css",
+    "main.js": "/Tunbra_Company/static/js/main.b8a18a84.js",
+    "static/media/robot_image.jpg": "/Tunbra_Company/static/media/robot_image.24932e8e44fe83c0fde5.jpg",
+    "static/media/consultation.svg": "/Tunbra_Company/static/media/consultation.ede9466b3634733f30c8d1a1b7bbe939.svg",
+    "static/media/web-dev.svg": "/Tunbra_Company/static/media/web-dev.fd61237124f5b922e412437caf61ea58.svg",
+    "static/media/hosting.svg": "/Tunbra_Company/static/media/hosting.b755d3eebb287dde8fcd287cb1d5653e.svg",
+    "static/media/app.svg": "/Tunbra_Company/static/media/app.3d550d02d3409ad587451a91e97e78fb.svg",
+    "static/media/kws.png": "/Tunbra_Company/static/media/kws.877da8110793af2c3d27.png",
+    "static/media/Web-developer.svg": "/Tunbra_Company/static/media/Web-developer.6c7276fff94ccaae45617195f0ef27ae.svg",
+    "static/media/web.svg": "/Tunbra_Company/static/media/web.bceccecdef8e71bd5a8d73effe14fdba.svg",
+    "static/media/footer.svg": "/Tunbra_Company/static/media/footer.906ede6aac71b4cfaeaa.svg",
+    "index.html": "/Tunbra_Company/index.html",
+    "static/media/hero-bg.svg": "/Tunbra_Company/static/media/hero-bg.c3b4448a16ff1a8da834.svg",
+    "main.b3c5eab3.css.map": "/Tunbra_Company/static/css/main.b3c5eab3.css.map",
+    "main.b8a18a84.js.map": "/Tunbra_Company/static/js/main.b8a18a84.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b3c5eab3.css",
+    "static/js/main.b8a18a84.js"
+  ]
+}
