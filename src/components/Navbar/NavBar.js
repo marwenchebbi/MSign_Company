@@ -46,15 +46,7 @@ const NavBar = () => {
         }
     };
 
-    // Toggle TTS
-    const toggleTTS = () => {
-        setTtsEnabled(!ttsEnabled);
-        if (!ttsEnabled) {
-            speakText("Text-to-Speech is now enabled.");
-        } else {
-            speakText("Text-to-Speech is now disabled.");
-        }
-    };
+   
 
     return (
         <nav className={`fixed top-0 w-full z-30 transition duration-300 ease-in-out mb-16 ${!top && 'bg-white shadow-lg'}`}>

@@ -13,7 +13,7 @@ const Contact = () => {
     const [phone, setPhone] = useState('');
     const [message, setMessage] = useState('');
     const [errors, setErrors] = useState([]);
-    const [statusMessage, setStatusMessage] = useState('');
+    //const [statusMessage, setStatusMessage] = useState('');
 
     const clearErrors = () => {
         setErrors([]);
@@ -49,7 +49,7 @@ const Contact = () => {
         .then((response) => {
             console.log('SUCCESS!', response.status, response.text);
             Notiflix.Notify.success('Message sent successfully!');
-            //clearInput();
+            clearInput();
         })
         .catch((error) => {
             console.log('FAILED...', error);
