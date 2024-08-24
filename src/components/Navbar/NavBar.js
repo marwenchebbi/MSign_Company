@@ -5,8 +5,6 @@ import { HashLink } from 'react-router-hash-link';
 const NavBar = () => {
     const [top, setTop] = useState(!window.scrollY);
     const [isOpen, setisOpen] = useState(false);
-    const [ttsEnabled, setTtsEnabled] = useState(false); // TTS Toggle State
-    const [voices, setVoices] = useState([]); // Store available voices
 
     function handleClick() {
         setisOpen(!isOpen);
@@ -34,17 +32,7 @@ const NavBar = () => {
     }, []);
 
     // TTS Functionality
-    const speakText = (text) => {
-        if (ttsEnabled && 'speechSynthesis' in window) {
-            const utterance = new SpeechSynthesisUtterance(text);
-            if (voices.length > 0) {
-                utterance.voice = voices[0]; // Select the first available voice (or customize)
-            }
-            utterance.pitch = 1; // Normal pitch
-            utterance.rate = 1; // Normal rate
-            window.speechSynthesis.speak(utterance);
-        }
-    };
+
 
    
 
