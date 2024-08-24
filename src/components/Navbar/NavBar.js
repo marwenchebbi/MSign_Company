@@ -19,17 +19,7 @@ const NavBar = () => {
     }, [top]);
 
     // Fetch available voices
-    useEffect(() => {
-        const loadVoices = () => {
-            const availableVoices = speechSynthesis.getVoices();
-            setVoices(availableVoices);
-        };
-
-        if (typeof window !== 'undefined' && window.speechSynthesis) {
-            loadVoices();
-            window.speechSynthesis.onvoiceschanged = loadVoices;
-        }
-    }, []);
+ 
 
     // TTS Functionality
 
