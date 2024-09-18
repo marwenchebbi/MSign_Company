@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/TunBra_Company/static/css/main.4c673f2b.css",
-    "main.js": "/TunBra_Company/static/js/main.7f62ce62.js",
-    "static/media/robot_image.jpg": "/TunBra_Company/static/media/robot_image.24932e8e44fe83c0fde5.jpg",
-    "static/media/consultation.svg": "/TunBra_Company/static/media/consultation.ede9466b3634733f30c8d1a1b7bbe939.svg",
-    "static/media/web-dev.svg": "/TunBra_Company/static/media/web-dev.fd61237124f5b922e412437caf61ea58.svg",
-    "static/media/hosting.svg": "/TunBra_Company/static/media/hosting.b755d3eebb287dde8fcd287cb1d5653e.svg",
-    "static/media/app.svg": "/TunBra_Company/static/media/app.3d550d02d3409ad587451a91e97e78fb.svg",
-    "static/media/kws.png": "/TunBra_Company/static/media/kws.877da8110793af2c3d27.png",
-    "static/media/Web-developer.svg": "/TunBra_Company/static/media/Web-developer.6c7276fff94ccaae45617195f0ef27ae.svg",
-    "static/media/web.svg": "/TunBra_Company/static/media/web.bceccecdef8e71bd5a8d73effe14fdba.svg",
-    "static/media/footer.svg": "/TunBra_Company/static/media/footer.906ede6aac71b4cfaeaa.svg",
-    "index.html": "/TunBra_Company/index.html",
-    "static/media/hero-bg.svg": "/TunBra_Company/static/media/hero-bg.c3b4448a16ff1a8da834.svg",
-    "main.4c673f2b.css.map": "/TunBra_Company/static/css/main.4c673f2b.css.map",
-    "main.7f62ce62.js.map": "/TunBra_Company/static/js/main.7f62ce62.js.map"
+    "main.css": "/MSign_Company/static/css/main.7c3069a8.css",
+    "main.js": "/MSign_Company/static/js/main.45406768.js",
+    "static/media/robot_image.jpg": "/MSign_Company/static/media/robot_image.24932e8e44fe83c0fde5.jpg",
+    "static/media/consultation.svg": "/MSign_Company/static/media/consultation.ede9466b3634733f30c8d1a1b7bbe939.svg",
+    "static/media/web-dev.svg": "/MSign_Company/static/media/web-dev.fd61237124f5b922e412437caf61ea58.svg",
+    "static/media/hosting.svg": "/MSign_Company/static/media/hosting.b755d3eebb287dde8fcd287cb1d5653e.svg",
+    "static/media/app.svg": "/MSign_Company/static/media/app.3d550d02d3409ad587451a91e97e78fb.svg",
+    "static/media/kws.png": "/MSign_Company/static/media/kws.877da8110793af2c3d27.png",
+    "static/media/Web-developer.svg": "/MSign_Company/static/media/Web-developer.6c7276fff94ccaae45617195f0ef27ae.svg",
+    "static/media/web.svg": "/MSign_Company/static/media/web.bceccecdef8e71bd5a8d73effe14fdba.svg",
+    "static/media/footer.svg": "/MSign_Company/static/media/footer.906ede6aac71b4cfaeaa.svg",
+    "index.html": "/MSign_Company/index.html",
+    "static/media/hero-bg.svg": "/MSign_Company/static/media/hero-bg.c3b4448a16ff1a8da834.svg",
+    "main.7c3069a8.css.map": "/MSign_Company/static/css/main.7c3069a8.css.map",
+    "main.45406768.js.map": "/MSign_Company/static/js/main.45406768.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c673f2b.css",
-    "static/js/main.7f62ce62.js"
+    "static/css/main.7c3069a8.css",
+    "static/js/main.45406768.js"
   ]
 }
