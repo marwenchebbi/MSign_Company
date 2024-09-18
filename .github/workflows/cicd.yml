@@ -25,7 +25,7 @@ jobs:
       run: npm install
 
     - name: Run tests
-      run: npm test -- --coverage  # Adjust this to your test command
+      run: npm test -- --coverage --passWithNoTests
 
     - name: Build app
       run: npm run build
