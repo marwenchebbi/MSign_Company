@@ -28,13 +28,7 @@ jobs:
       run: npm test -- --coverage --passWithNoTests
 
     - name: Build app
-      run: npm run build
-
-    - name: Upload build artifacts
-      uses: actions/upload-artifact@v3
-      with:
-        name: build
-        path: build/
+      run: npm run build  # This generates the build directory
 
   deploy:
     needs: build
