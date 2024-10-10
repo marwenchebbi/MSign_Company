@@ -28,14 +28,16 @@ jobs:
       run: npm test -- --coverage --passWithNoTests
 
     - name: Build app
-      run: npm run build  # This generates the build directory
+      run: npm run build
 
-    - name: List build directory
-      run: ls -la build  # List contents of the build directory to verify it exists
+    - name: List build directory contents
+      run: ls -la build  # Confirm build artifacts are generated
 
-    - name: List Current Directory
-      run: ls -la
-
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: build
+        path: build/
 
   deploy:
     needs: build
@@ -45,13 +47,16 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
+    - name: Download build artifacts
+      uses: actions/download-artifact@v3
+      with:
+        name: build
+
     - name: Install Firebase CLI
       run: npm install -g firebase-tools
 
     - name: List Current Directory
-      run: ls -la 
+      run: ls -la  # For debugging to confirm the directory structure
 
     - name: Deploy to Firebase Hosting
-      env:
-        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-      run: firebase deploy --only hosting --token $FIREBASE_TOKEN
+      run: firebase deploy --only hosting
