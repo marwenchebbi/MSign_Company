@@ -32,7 +32,7 @@ jobs:
 
     - name: List build directory
       run: ls -la build  # List contents of the build directory to verify it exists
-      
+
     - name: List Current Directory
       run: ls -la
 
@@ -47,6 +47,9 @@ jobs:
 
     - name: Install Firebase CLI
       run: npm install -g firebase-tools
+
+    - name: List Current Directory
+      run: ls -la 
 
     - name: Deploy to Firebase Hosting
       env:
