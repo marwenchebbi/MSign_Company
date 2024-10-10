@@ -32,6 +32,10 @@ jobs:
 
     - name: List build directory
       run: ls -la build  # List contents of the build directory to verify it exists
+      
+    - name: List Current Directory
+      run: ls -la
+
 
   deploy:
     needs: build
