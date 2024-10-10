@@ -30,6 +30,9 @@ jobs:
     - name: Build app
       run: npm run build  # This generates the build directory
 
+    - name: List build directory
+      run: ls -la build  # List contents of the build directory to verify it exists
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
