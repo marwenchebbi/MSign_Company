@@ -31,7 +31,7 @@ jobs:
       run: npm run build
 
     - name: List build directory contents
-      run: ls -la build  # Confirm build artifacts are generated
+      run: ls -la build  
 
     - name: Upload build artifacts
       uses: actions/upload-artifact@v3
@@ -61,4 +61,5 @@ jobs:
     - name: Deploy to Firebase Hosting
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        
       run: firebase deploy --only hosting --token $FIREBASE_TOKEN
