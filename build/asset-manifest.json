@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.218fd137.css",
-    "main.js": "/static/js/main.fde5c1ff.js",
+    "main.js": "/static/js/main.a1967fcb.js",
     "static/media/robot_image.jpg": "/static/media/robot_image.24932e8e44fe83c0fde5.jpg",
+    "static/media/braille_printer.jpg": "/static/media/braille_printer.e0975d330ac0a6935f92.jpg",
     "static/media/consultation.svg": "/static/media/consultation.ede9466b3634733f30c8d1a1b7bbe939.svg",
-    "static/media/web-dev.svg": "/static/media/web-dev.fd61237124f5b922e412437caf61ea58.svg",
     "static/media/hosting.svg": "/static/media/hosting.b755d3eebb287dde8fcd287cb1d5653e.svg",
     "static/media/app.svg": "/static/media/app.3d550d02d3409ad587451a91e97e78fb.svg",
     "static/media/kws.png": "/static/media/kws.877da8110793af2c3d27.png",
@@ -14,10 +14,10 @@
     "index.html": "/index.html",
     "static/media/hero-bg.svg": "/static/media/hero-bg.c3b4448a16ff1a8da834.svg",
     "main.218fd137.css.map": "/static/css/main.218fd137.css.map",
-    "main.fde5c1ff.js.map": "/static/js/main.fde5c1ff.js.map"
+    "main.a1967fcb.js.map": "/static/js/main.a1967fcb.js.map"
   },
   "entrypoints": [
     "static/css/main.218fd137.css",
-    "static/js/main.fde5c1ff.js"
+    "static/js/main.a1967fcb.js"
   ]
 }
