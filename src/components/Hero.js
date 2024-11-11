@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import NavBar from '../components/Navbar/NavBar';
 import heroImg from '../images/web-dev.svg';
+import braille_printer from '../images/braille_printer.jpg'
 
 const Hero = () => {
     return (
@@ -35,8 +36,8 @@ const Hero = () => {
                                 </a> */}
                             </div>
                         </div>
-                        <div className="flex lg:justify-end w-full lg:w-1/2" data-aos="fade-up" data-aos-delay="700">
-                            <img alt="card img" className="rounded-t float-right duration-1000 w-full" src={heroImg} />
+                        <div className="flex lg:justify-end w-full lg:w-1/2" data-aos="fade-up" data-aos-delay="500">
+                            <img alt="card img" className="rounded-t float-right duration-1000 w-full" src={braille_printer} />
                         </div>
                     </div>
                 </div>
