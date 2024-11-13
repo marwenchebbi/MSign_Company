@@ -33,11 +33,7 @@ jobs:
     - name: List build directory contents
       run: ls -la build  
 
-    - name: Upload build artifacts
-      uses: actions/upload-artifact@v3
-      with:
-        name: build
-        path: build/
+
 
   deploy:
     needs: build
