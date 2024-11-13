@@ -55,11 +55,15 @@ jobs:
     - name: Install Firebase CLI
       run: npm install -g firebase-tools
 
-    - name: List Current Directory
-      run: ls -la  
+    - name: Set up Google Application Credentials
+      env:
+        GOOGLE_APPLICATION_CREDENTIALS_JSON: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS_JSON }}
+      run: |
+        echo "${GOOGLE_APPLICATION_CREDENTIALS_JSON}" > "${HOME}/gcloud_key.json"
+        echo "File created at ${HOME}/gcloud_key.json"
+        cat "${HOME}/gcloud_key.json"  
 
     - name: Deploy to Firebase Hosting
       env:
-        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-        
-      run: firebase deploy --only hosting --token $FIREBASE_TOKEN
+        GOOGLE_APPLICATION_CREDENTIALS: "${HOME}/gcloud_key.json"
+      run: firebase deploy --only hosting
