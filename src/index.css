@@ -21,7 +21,8 @@ body {
 
 .cta {
   background: linear-gradient(rgba(2,2,2,.7),rgba(0,0,0,.7)), url(./images/robot_image.jpg) fixed center center;
-  background-size: 150%; /* Adjust the percentage to zoom out or in */
+  background-size: 150%
+  ; /* Adjust the percentage to zoom out or in */
 }
 
 

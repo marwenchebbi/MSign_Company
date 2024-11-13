@@ -34,7 +34,7 @@ const Contact = () => {
         const templateParams = {
             first_name: firstName,
             last_name: lastName,
-            email: email,
+            email: 'tunbra.company@gmail.com',
             phone_number: phone,
             message: message,
             from_email: email,
@@ -177,7 +177,10 @@ const Contact = () => {
                                 </div>
                                 <div className="flex flex-col">
                                     <h2 className="text-2xl">Office Address</h2>
-                                    <p className="text-white">Ilo Awela, Ota, Ogun State</p>
+                                    <p className="text-white">                                    <h5>TunBra</h5>
+                                    <p>Mahdia,</p>
+                                    <p>Pépinière des entreprises</p>
+                                    <p>Avenue 4100.</p></p>
                                 </div>
                             </div>
 
@@ -192,7 +195,7 @@ const Contact = () => {
 
                                     <div className="mt-5">
                                         <h2 className="text-2xl">Send an E-mail</h2>
-                                        <p className="text-white">info@mld.ng</p>
+                                        <p className="text-white">tunbra.services@gmail.com</p>
                                     </div>
                                 </div>
                             </div>
