@@ -58,8 +58,11 @@ jobs:
     - name: Set up Google Application Credentials
       env:
         GOOGLE_APPLICATION_CREDENTIALS_JSON: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS_JSON }}
-      run: echo "${GOOGLE_APPLICATION_CREDENTIALS_JSON}" > "${HOME}/gcloud_key.json"
-    
+      run: |
+        echo "${GOOGLE_APPLICATION_CREDENTIALS_JSON}" > "${HOME}/gcloud_key.json"
+        echo "File created at ${HOME}/gcloud_key.json"
+        cat "${HOME}/gcloud_key.json"  # Optional: to confirm the file is created (for debugging)
+
     - name: Deploy to Firebase Hosting
       env:
         GOOGLE_APPLICATION_CREDENTIALS: "${HOME}/gcloud_key.json"
