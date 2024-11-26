@@ -35,7 +35,7 @@ const Hero = () => {
             <NavBar />
 
             <div className="container mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-center justify-between">
-                <div className="text-center lg:text-left lg:w-1/2 mb-8 lg:mb-0">
+                <div className="text-center lg:text-left lg:w-2/3 mb-8 lg:mb-0">
                     <h1
                         className="mb-5 md:text-5xl text-3xl font-bold text-blue-900"
                         style={{
@@ -57,7 +57,7 @@ const Hero = () => {
                     </Link>
                 </div>
                 <div className="lg:w-1/2 flex justify-center lg:justify-end">
-                    <img alt="Braille printer" className="rounded-lg  w-80 md:w-[340px] pr-3" src={sign_language} />
+                    <img alt="Braille printer" className="rounded-lg  w-80 md:w-[350px] pr-3" src={sign_language} />
                 </div>
             </div>
         </div>

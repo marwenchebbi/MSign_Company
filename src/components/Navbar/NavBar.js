@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import NavLinks from '../Navbar/NavLinks';
 import { HashLink } from 'react-router-hash-link';
-import TunBra_Logo from '../../images/TunBra_Logo.png';
+import Msign_Logo from '../../images/Msign.png';
 
 const NavBar = () => {
     const [top, setTop] = useState(!window.scrollY);
@@ -31,7 +31,7 @@ const NavBar = () => {
         <nav className={`fixed top-0 w-full z-30 transition duration-300 ease-in-out mb-12 h-[120px] ${!top && ' bg-slate-100 shadow-lg'}`}>
             <div className="flex flex-row justify-between items-center py-2">
                 <div className="flex flex-row justify-center md:px-1 md:mx-2 items-center text-center font-semibold">
-                    <HashLink smooth to="/#hero"><h1 className="font-extrabold text-4xl text-gray-900"><img src={TunBra_Logo} alt="TunBra Logo" className=' h-[150px] w-[220px] ml-3' /></h1></HashLink>
+                    <HashLink smooth to="/#hero"><h1 className="font-extrabold text-2xl text-gray-900"><img src={Msign_Logo} alt="Msign Logo" className=' h-[100px] w-[220px] ml-3' /></h1></HashLink>
                 </div>
                 <div className="group flex flex-col items-center">
                     <button className=" mr-5 rounded-lg lg:hidden text-blue-900 font-bold" onClick={handleClick}>
