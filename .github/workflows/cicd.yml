@@ -30,6 +30,14 @@ jobs:
     - name: Build app
       run: npm run build
 
+    - name: Verify Build Output Directory
+      run: |
+        echo "Current directory: $(pwd)"
+        echo "Listing root directory contents:"
+        ls -la
+        echo "Listing build directory contents:"
+        ls -la build || echo "Build directory is missing"
+
     - name: List build directory contents
       run: ls -la build  # Confirm build artifacts are generated
 
