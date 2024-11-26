@@ -59,6 +59,7 @@ jobs:
       uses: actions/download-artifact@v3
       with:
         name: build
+        path: ./build
 
     - name: List Current Directory
       run: ls -la  
