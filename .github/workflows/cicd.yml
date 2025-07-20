@@ -1,0 +1,78 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - main  
+  pull_request:
+    branches:
+      - main  
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'  
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run tests
+      run: npm test -- --coverage --passWithNoTests
+
+    - name: Build app
+      run: npm run build
+
+    - name: Verify Build Output Directory
+      run: |
+        echo "Current directory: $(pwd)"
+        echo "Listing root directory contents:"
+        ls -la
+        echo "Listing build directory contents:"
+        ls -la build || echo "Build directory is missing"
+
+    - name: List build directory contents
+      run: ls -la build  # Confirm build artifacts are generated
+
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: build
+        path: build/
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Download build artifacts
+      uses: actions/download-artifact@v3
+      with:
+        name: build
+        path: ./build
+
+    - name: List Current Directory
+      run: ls -la  
+
+    - name: Verify build directory exists
+      run: |
+        echo "Verifying build directory existence:"
+        ls -la build || echo "Build directory is missing"
+
+    - name: Install Firebase CLI
+      run: npm install -g firebase-tools
+
+    - name: Deploy to Firebase Hosting
+      env:
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+      run: firebase deploy --only hosting --token $FIREBASE_TOKEN

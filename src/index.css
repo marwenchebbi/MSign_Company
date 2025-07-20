@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.hero {
+  background: url(./images/hero-bg.svg) top center no-repeat;
+  background-size: cover;
+}
+
+.footer {
+  background: url(./images/footer.svg) top center no-repeat;
+  background-size: cover;
+}
+
+.cta {
+  background: linear-gradient(rgba(2,2,2,.7),rgba(0,0,0,.7)), url(./images/robot_image.jpg) fixed center center;
+  background-size: 150%
+  ; /* Adjust the percentage to zoom out or in */
+}
+
+
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
